@@ -1,0 +1,454 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url('4.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<head>
+<title>Resume Builder</title>
+</head>
+<head>
+  <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: blue;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<style>
+hr.new5 {
+  border: 10px solid black;
+  border-radius: 5px;
+}
+</style>
+<body>
+
+<ul>
+<li><img src="1.jpeg" width="80"></li>
+  <li><a href="login.html">Home</a></li>
+  <li><a href="resume.html">ResumeBuilder</a></li>
+  <li class="dropdown">
+    <a href="feedback.html" class="dropbtn">Feedback</a>
+ <li style="float:right"><a class="active" href="home.html">Sign Out</a></li>
+  </li>
+</ul>
+
+<body>
+<p class="solid">
+<form action="d.php">
+<form action="upload.php" method="post" enctype="multipart/form-data">
+  Select image to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+</form>
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" name="fname" id="fname"  placeholder=" Dhruv " required><br><br>
+ 
+<label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" placeholder="  sheth "  required><br><br>
+
+<input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+
+<label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob" placeholder="21-05-2000" required><br><br>
+
+<label for="mno">Enter a phone number:</label>
+  <input type="tel" id="mno" name="mno" placeholder="9876543210" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+<label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" placeholder="dhruv.sheth@universal.edu.in" required><br><br>
+
+<label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" cols="50" placeholder="kamala park 60 feet road bhayander(west)"required></textarea>
+</fieldset>
+
+<fieldset>
+    <legend>EDUCATIONAL QUALIFICATION:</legend>
+<h2>SSC INFORMATION:-</h2>
+
+<label for="school">Name Of School:</label>
+    <input type="text" id="school" name="school" placeholder="DON BOSCE HIGH SCHOOL" required><br><br>
+
+ <label for="board">Choose a Board:</label>
+  <select id="board" name="board" >
+    <option value="None">None</option>
+    <option value="SSC">SSC</option>
+    <option value="CBSC">CBSC</option>
+    <option value="ICSE">ICSE</option>
+    <option value="IB SCHOOL">IB SCHOOL</option>
+  </select><br><br>
+
+<label for="state">Choose a States:</label>
+  <select name="state" id="state" required>
+<option value="None">None</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Puducherry">Puducherry</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="West Bengal">West Bengal</option>
+</select><br><br>
+
+<label for="percent">Percentage:</label>
+    <input type="number" id="percent" name="percent" placeholder="74.00%" required>  %<br><br>
+
+<label for="grade">Grade:</label>
+  <select id="grade" name="grade" required>
+    <option value="None">None</option>
+    <option value="O">O</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="F">F</option>
+  </select><br><br>
+
+<label for="yop">Year Of passing:</label>
+  <input type="date" id="yop" name="yop" placeholder="MARCH 2016" required><br><br>
+
+<hr class="new5">
+
+<h2>HSC INFORMATION:-</h2>
+
+<label for="stream">Stream:</label>
+  <select id="stream" name="stream" required>
+    <option value="None">None</option>
+    <option value="Science">Science</option>
+    <option value="Commerce">Commerce</option>
+    <option value="Arts/Humanities">Arts/Humanities</option>
+    <option value="Diploma">Diploma</option>
+  </select><br><br>
+
+
+<label for="collegename">Name Of College:</label>
+    <input type="text" id="collegename" name="collegename" placeholder="S.V.P COLLEGE" required><br><br>
+
+<label for="cboard">Choose a Board:</label>
+  <select id="cboard" name="cboard" >
+    <option value="None">None</option>
+    <option value="HSC">HSC</option>
+    <option value="CBSC">CBSC</option>
+    <option value="ICSE">ICSE</option>
+  </select><br><br>
+
+<label for="cstates">Choose a States:</label>
+  <select name="cstates" id="cstates" required>
+<option value="None">None</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Assam">Assam</option>
+<option value="Bihar">Bihar</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Delhi">Delhi</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Puducherry">Puducherry</option>
+<option value="Goa">Goa</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Haryana">Haryana</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Kerala">Kerala</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Manipur">Manipur</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Odisha">Odisha</option>
+<option value="Punjab">Punjab</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Tripura">Tripura</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="West Bengal">West Bengal</option>
+</select><br><br>
+
+<label for="cpercents">Percentage:</label>
+    <input type="number" id="cpercents" name="cpercents" placeholder="80.45%" required>  %<br><br>
+
+<label for="collegegrade">Grade:</label>
+  <select id="collegegrade" name="collegegrade" required>
+    <option value="None">None</option>
+    <option value="O">O</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="F">F</option>
+  </select><br><br>
+
+<label for="cyop">Year Of passing:</label>
+  <input type="date" id="cyop" name="cyop" placeholder="MARCH 2018" required><br><br>
+
+<hr class="new5">
+
+<h2>GRADUATION INFORMATION:-</h2>
+
+
+<label for="gradcollege">Name Of College:</label>
+    <input type="text" id="gradcollege" name="gradcollege" placeholder="UNIVERSAL COLLEGE OF ENGINEERING" required><br><br>
+
+<label for="university">Name of University:</label>
+<input type="text" id="university" name="university" placeholder="MUMBAI UNIVERSITY" required><br><br>
+
+<label for="ustream">Stream:</label>
+  <select id="ustream" name="ustream" required>
+    <option value="None">None</option>
+    <option value="BE-IT">BE-IT</option>
+    <option value="BE-COMPUTER SCIENCE ">BE-COMPuter</option>
+    <option value="BE-EXTC">BE-EXTC</option>
+    <option value="BE-ETRX">BE-ETRX</option>
+    <option value="BE-MECHINCAL">BE-MECHINCAL</option>
+    <option value="BE-BIOTECH">BE-BIOTECH</option>
+    <option value="BE-ETRX">BE-ETRX</option>
+    <option value="MBA">MBA</option>
+    <option value="BMS">BMS</option>
+    <option value="BAF">BAF</option>
+  </select><br><br>
+
+<label for="firstyear">First year average GGPA:</label>
+    <input type="number" id="firstyear" name="firstyear" placeholder="6.64" required>  % 
+
+<label for="fgrade">Grade:</label>
+  <select id="fgrade" name="fgrade" required>
+    <option value="None">None</option>
+    <option value="O">O</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="F">F</option>
+  </select><br><br>
+
+<label for="secondyear">Second year average GGPA:</label>
+    <input type="number" id="secondyear" name="secondyear" placeholder="9" required>  % 
+
+<label for="sgrade">Grade:</label>
+  <select id="sgrade" name="sgrade" required>
+    <option value="None">None</option>
+    <option value="O">O</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="F">F</option>
+  </select><br><br>
+
+<label for="thirdyear">Third year average GGPA:</label>
+    <input type="number" id="thirdyear" name="thirdyear" placeholder="THIRDYEAR" required>  % 
+
+<label for="tgrade">Grade:</label>
+  <select id="tgrade" name="tgrade" required>
+    <option value="None">None</option>
+    <option value="O">O</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="F">F</option>
+  </select><br><br>
+
+<label for="finalyear">Final year average CGPA:</label>
+    <input type="number" id="finalyear" name="finalyear" placeholder="FINALYEAR" required>  % 
+
+<label for="finalgrade">Grade:</label>
+  <select id="finalgrade" name="finalgrade" required>
+    <option value="None">None</option>
+    <option value="O">O</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="F">F</option>
+  </select><br><br>
+
+<label for="uyop">Year Of passing:</label>
+  <input type="date" id="uyop" name="uyop" placeholder=" MAY 2022" required><br><br>
+
+<hr class="new5">
+
+<h2>POST GRADUATION INFORMATION:-</h2>
+
+<label for="pgcollege">Name Of College:</label>
+    <input type="text" id="pgcollege" name="pgcollege" placeholder="College Name"><br><br>
+
+
+<label for="pguniversity">Name of University/COUNTRY:</label>
+<input type="text" id="pguniversity" name="pguniversity" ><br><br>
+
+<label for="pgstream">STREAM:</label>
+<input type="text" id="pgstream" name="pgstream" ><br><br>
+
+<label for="pgfirstyear">First year average CGPA:</label>
+    <input type="number" id="pgfirstyear" name="pgfirstyear" placeholder="PUT YOUR AVG OF SEM1 &2 FIRSTYEAR" required>  % 
+
+<label for="pggrade">Grade:</label>
+  <select id="pggrade" name="pggrade" required>
+    <option value="None">None</option>
+    <option value="O">O</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="F">F</option>
+  </select><br><br>
+
+<label for="pgsecondyear">Second year average CGPA:</label>
+    <input type="number" id="pgsecondyear" name="secondyear" placeholder="PUT YOUR AVG OF SEM1 &2 SECONDYEAR" required>  % 
+
+<label for="pgsgrade">Grade:</label>
+  <select id="pgsgrade" name="pgsgrade" required>
+    <option value="None">None</option>
+    <option value="O">O</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="F">F</option>
+  </select><br><br>
+
+<label for="pgyop">Year Of passing:</label>
+  <input type="date" id="pgyop" name="pgyop" placeholder="Enter your passing year" required><br><br>
+
+<hr class="new5">
+
+<h2>LAST PROJECT MADE</h2>
+
+<label for="project"> PROJECT MADE:</label>
+<textarea id="PROJECT" name="PROJECT" rows="4" cols="50" placeholder="1 RESUME BUILDER"required></textarea>
+
+<label for="subject">Name of Language/Subject:</label>
+<textarea id="SUBJECT" name="SUBJECT" rows="4" cols="50" placeholder="1 PHPMYADMIN 2.HTML 3.CSS"required></textarea>
+
+<label for="pyop">Year:</label>
+  <input type="date" id="pyop" name="pyop" placeholder="25-11-2020" required><br><br>
+
+<hr class="new5">
+
+<h2>WORK EXPERIENCE</h2>
+<label for="experience">Work EXPRIANCE:</label>
+  <select id="experience" name="expriance">
+    <option value="None">None</option>
+    <option value="FRESHER">FRESHER</option>
+    <option value="EXPERIENCED">EXPERIENCED</option>
+  </select><br><br>
+
+<label for="eyear">Year Of Expriance :</label>
+  <input type="number" id="eyear" name="year" placeholder="Enter your Exprianced year"><br><br>
+
+<hr class="new5">
+
+<h2>OTHER INFORMATION</h2>
+
+<label for="hobbies">Hobbies:</label>
+<input type="text" id="hobbies" name="hobbies" placeholder= "cricket" ><br><br>
+
+<label for="skill">SKILL:</label>
+<input type="text" id="skill" name="skill" placeholder ="MAKING NEW WEBSITE" ><br><br>
+
+<label for="language">LANGUAGE KNOWN:</label>
+<input type="text" id="language" name="language" ><br><br>
+<input type="submit" value="Submit">
+  <input type="reset">
+</form>
+</fieldset>
+</form>
+</body>
+</html>
